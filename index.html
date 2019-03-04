@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Custom Video Player</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="control-video">
+            <video class="video" src="video/Travel to Morocco in 4K.mp4"></video>
+            <div class="controls">
+                <div class="orange-bar">
+                    <div class="orange-juice"></div>
+                </div>
+                <div class="buttons">
+                    <button onclick="play01()" id="play-pause"><i class="fas fa-play"></i></button>
+                    <button id="mute"><i class="fas fa-volume-up"></i></button>
+                    <!-- <button><i id="full-screen" class="fas fa-arrows-alt"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

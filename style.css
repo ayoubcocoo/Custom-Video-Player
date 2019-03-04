@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.video {
+    width: 100%;
+    /* margin-top: 5rem; */
+}
+
+.control-video {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+/* Bar Of The Player */
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+    /* background: rgba(206, 183, 148, 0) */
+    /* background: rgba(44, 44, 44, 0.7) */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3930614482120973) 0%, rgba(0, 0, 0, 0.3818569664193803) 35%, rgba(0, 0, 0, 0.08493819891237742) 100%);
+    opacity: 0;
+    transition: all ease-out 0.3s;
+}
+
+.fas {
+    /* color: rgb(206, 183, 148); */
+    color: white;
+    font-size: 15px;
+}
+
+.volum {
+    margin-top: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.orange-bar {
+    height: 3px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(211, 220, 224, 0.3);
+    /* transform: translateY(100%) translateY(34px) */
+}
+
+.orange-juice {
+    height: 3px;
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+}
+
+.orange-juice:hover {
+    transform: scaleY(1.5);
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+}
+
+.orange-bar:hover {
+    transform: scaleY(1.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(211, 220, 224, 0.3);
+}
+
+.video:hover+.controls {
+    opacity: 1;
+}
+
+.controls:hover {
+    opacity: 1;
+}
